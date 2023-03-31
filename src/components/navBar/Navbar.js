@@ -1,39 +1,41 @@
-import sun from "./../../img/icons/sun.svg";
-import moon from "./../../img/icons/sun.svg";
-import './style.css';
+import { NavLink } from "react-router-dom";
+import BtnDarkMode from "../btnDarkMode/BtnDarkMode";
+import "./style.css";
+
 
 const Navbar = () => {
+	const activeLink = "nav-list__link nav-list__link--active";
+	const normalLink = "nav-list__link";
+
 	return (
 		<nav className="nav">
 			<div className="container">
 				<div className="nav-row">
-					<a href="./index.html" className="logo">
+					<NavLink to="/" className="logo">
 						<strong>Freelancer</strong> portfolio
-					</a>
-
-					<button className="dark-mode-btn">
-						<img src={sun} alt="light mode" className="dark-mode-btn__icon" />
-						<img src={moon} alt="dark mode" className="dark-mode-btn__icon" />
-					</button>
-
+					</NavLink>
+					<BtnDarkMode />
 					<ul className="nav-list">
-						<li className="nav-list__item">
-							<a
-								href="./index.html"
-								className="nav-list__link nav-list__link--active"
-							>
+						<li
+							className="nav-list__item"
+						>
+							<NavLink to="/" className={({ isActive }) => isActive ? activeLink : normalLink}>
 								Home
-							</a>
+							</NavLink>
 						</li>
-						<li className="nav-list__item">
-							<a href="./projects.html" className="nav-list__link">
+						<li
+							className="nav-list__item"
+						>
+							<NavLink to="/projects" className={({ isActive }) => isActive ? activeLink : normalLink}>
 								Projects
-							</a>
+							</NavLink>
 						</li>
-						<li className="nav-list__item">
-							<a href="./contacts.html" className="nav-list__link">
+						<li
+							className="nav-list__item"
+						>
+							<NavLink to="/contacts" className={({ isActive }) => isActive ? activeLink : normalLink}>
 								Contacts
-							</a>
+							</NavLink>
 						</li>
 					</ul>
 				</div>
