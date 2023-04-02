@@ -18,44 +18,44 @@ import project06Big from "./../img/projects/06-big.jpg";
 
 const projects = [
 	{
-		title: 'Gaming streaming portal',
-		skills: 'React, Node.js, MongoDB',
+		title: "Gaming streaming portal",
+		skills: "React, Node.js, MongoDB",
 		img: project01,
 		imgBig: project01Big,
-		gitHubLink: 'https://github.com',
+		gitHubLink: "https://github.com",
 	},
 	{
-		title: 'Video service',
+		title: "Video service",
 		img: project02,
 		imgBig: project02Big,
-		skills: 'React, PHP, MySql',
-		gitHubLink: 'https://github.com',
+		skills: "React, PHP, MySql",
+		gitHubLink: "https://github.com",
 	},
 	{
-		title: 'Video portal',
+		title: "Video portal",
 		img: project03,
 		imgBig: project03Big,
-		skills: 'Vue JS, Node.js, MongoDB',
-		gitHubLink: 'https://github.com',
+		skills: "Vue JS, Node.js, MongoDB",
+		gitHubLink: "https://github.com",
 	},
 	{
-		title: 'Dating app',
+		title: "Dating app",
 		img: project04,
 		imgBig: project04Big,
-		skills: 'React Native',
+		skills: "React Native",
 	},
 	{
-		title: 'Landing',
+		title: "Landing",
 		img: project05,
 		imgBig: project05Big,
-		skills: 'HTML, SCSS, JS',
+		skills: "HTML, SCSS, JS",
 	},
 	{
-		title: 'Gaming community',
+		title: "Gaming community",
 		img: project06,
 		imgBig: project06Big,
-		skills: 'React, PHP, MySql',
+		skills: "React, PHP, MySql",
 	},
 ];
 
-export {projects}
+export { projects };
